@@ -2,7 +2,8 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	font-family: "montserrat-regular";
+    font-family: "montserrat-regular";
+    transition:all 6s cubic-bezier(0.83,-0.03, 0.76, 1.34);
 }
 
 .main{
@@ -21,9 +22,21 @@
     box-shadow: 0 0 32px rgba($color: #000000, $alpha: 0.30);
     position: relative;
 
+    #img1:hover{
+        transform: translate(0, var(--ty1));
+    }
+    #img2:hover{
+        transform: translate(0, var(--ty2));
+    }
+
     img{
         width: 100%;
         position: absolute;
-        top: 0
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+
     }
+    
+
 }
